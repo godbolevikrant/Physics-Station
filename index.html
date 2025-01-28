@@ -43,7 +43,7 @@
                                 <a class="nav-link" href="#">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Resources</a>
+                                <a class="nav-link" href="resources.html">Resources</a>
                             </li>
                             <li class="nav-item lg-btn">
                                 <a class="nav-link text-white" href="#">Login</a>
@@ -58,18 +58,89 @@
         <div class="container ">
             <h1 class=" mainheading-style">Welcome to Physics Station</h1>
             <p class="lead-style">Your one-stop destination for all things physics.</p>
-            <a href="#" class="btn-style mt-5">Register Here</a>
+            <a href="#" class="btn-style mt-5" data-toggle="modal" data-target="#exampleModalCenter">Register Here</a>
         </div>
     </section>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+                <i class="fas fa-exclamation-triangle text-warning"></i> Please ensure all information is accurate before submitting the form.
+            </h5>
+            
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="adharCard">Adhar Card Number</label>
+                    <input type="text" class="form-control" id="adharCard" placeholder="Enter your Adhar Card number" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea class="form-control" id="address" rows="3" placeholder="Enter your address" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="standard">Standard</label>
+                    <select class="form-control" id="standard" required>
+                        <option value="">Choose...</option>
+                        <option value="11th">8th Standard</option>
+                        <option value="11th">9th Standard</option>
+                        <option value="11th">10th Standard</option>
+                        <option value="11th">11th Standard</option>
+                        <option value="12th">12th Standard</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="course">Select Course</label>
+                    <select class="form-control" id="course" required>
+                        <option value="">Choose...</option>
+                        <option value="tutoring">Physics</option>
+                        <option value="resources">Chemistry</option>
+                        <option value="online_registration">Math</option>
+                        <option value="online_attendance">Biology</option>
+                        <option value="weekly_exams">Science</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="passportPhoto">Passport Size Photo</label>
+                    <input type="file" class="form-control-file" id="passportPhoto" accept="image/*" required>
+                </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+                <button type="" class="btn-style">Reset</button>
+              </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn-style">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
     <section class="services-section ser-style">
         <div class="container">
             <div class="row text-center">
-                <div class="col-12 mb-4">
+                <!-- <div class="col-12 mb-4">
                     <h2 class="h1">We Offer</h2>
                     <p>We offer specialized physics tuition for 11th and 12th standard students to help them excel in their studies.</p>
-                </div>
+                </div> -->
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <div class="card-body">
@@ -397,6 +468,32 @@
             </div>
         </div>
     </section>
+
+    <!-- <div class="fixed-badge">
+        <a href="#" class="badge badge-info">Admissions Open <br> Register as Soon as Possible</a>
+    </div>
+
+    <style>
+    .fixed-badge {
+        position: fixed;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1000;
+        animation: fadeOut 10s forwards;
+        }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                display: none;
+            }
+            }
+    </style> -->
+
 
 
     <footer class="text-white text-center text-lg-start footergb-style">

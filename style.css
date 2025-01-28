@@ -155,7 +155,7 @@ table {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: -20%;
+    margin-top: -28%;
 }
 .ser-Card-style{
     color:#ebc930
@@ -194,4 +194,10 @@ table {
 }
 .footergb-style{
     background-image: linear-gradient(to right bottom, #131519, #030507);
+}
+
+.res-head-style{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
