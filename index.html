@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="script.js"></script>
+    <title>Physics Station</title>
+</head>
+<body>
+    <video autoplay muted loop id="bgVideo">
+        <source src="assets/7670836-uhd_3840_2160_30fps.mp4" type="video/mp4">
+    </video>
+    
+    <header class="container-fluid p-3 text-white">
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <h1 class="h3 logo-style">PS</h1>
+            </div>
+            <div class="col-md-8 text-md-right text-right">
+                <nav class="navbar navbar-expand-md navbar-dark justify-content-end navtg-style">
+                    <button class="navbar-toggler mt-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto nav-style">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Resources</a>
+                            </li>
+                            <li class="nav-item lg-btn">
+                                <a class="nav-link text-white" href="#">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="hero-section d-flex align-items-center text-center text-white my-5 hero-style">
+        <div class="container ">
+            <h1 class=" mainheading-style">Welcome to Physics Station</h1>
+            <p class="lead-style">Your one-stop destination for all things physics.</p>
+            <a href="#" class="btn-style mt-5">Register Here</a>
+        </div>
+    </section>
+
+
+    <section class="services-section ser-style">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 mb-4">
+                    <h2 class="h1">We Offer</h2>
+                    <p>We offer specialized physics tuition for 11th and 12th standard students to help them excel in their studies.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-chalkboard-teacher fa-3x mb-3 ser-Card-style" ></i>
+                            <h5 class="card-title">Tutoring</h5>
+                            <p class="card-text">Personalized tutoring sessions to help you master physics concepts.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-book fa-3x mb-3 ser-Card-style"></i>
+                            <h5 class="card-title">Resources</h5>
+                            <p class="card-text">Access to a wide range of physics resources and study materials.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-user-edit fa-3x mb-3 ser-Card-style"></i>
+                            <h5 class="card-title">Online Registration</h5>
+                            <p class="card-text">Register online for our courses and start learning physics from today.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-calendar-check fa-3x mb-3 ser-Card-style"></i>
+                            <h5 class="card-title">Online Attendace</h5>
+                            <p class="card-text">Track your attendance online with our easy-to-use system.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-pencil-alt fa-3x mb-3 ser-Card-style"></i>
+                            <h5 class="card-title">Weekly Exams</h5>
+                            <p class="card-text">Weekly exams to test your knowledge and track your progress.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-microscope fa-3x mb-3 ser-Card-style"></i>
+                            <h5 class="card-title">Practical</h5>
+                            <p class="card-text">Hands-on practical sessions to enhance your understanding of physics concepts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="other-services-section py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 mb-4">
+                    <h2 class="h1">Preparations</h2>
+                    <p>We also offer preparation courses for various competitive exams.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-box">
+                        <i class="fas fa-stethoscope fa-3x mb-3 ser-Card-style"></i>
+                        <h5 class="service-title">NEET Preparation</h5>
+                        <p class="service-text">Comprehensive coaching for NEET aspirants to help them achieve their medical career goals.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-box">
+                        <i class="fas fa-graduation-cap fa-3x mb-3 ser-Card-style"></i>
+                        <h5 class="service-title">GATE Preparation</h5>
+                        <p class="service-text">Expert guidance and resources for GATE exam preparation to excel in engineering fields.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-box">
+                        <i class="fas fa-book-reader fa-3x mb-3 ser-Card-style"></i>
+                        <h5 class="service-title">JEE Preparation</h5>
+                        <p class="service-text">Specialized coaching for JEE aspirants to help them crack the exam and secure admission in top engineering colleges.</p>
+                    </div>
+                    
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section about-style py-5 abt-bg-style">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h2 class="h1">About Us</h2>
+                    <p>Learn more about Physics Station and our mission to make physics accessible to everyone.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h3 class="h4"><i class="fas fa-bullseye ser-Card-style"></i> Our Mission</h3>
+                    <p>Our mission is to provide high-quality physics education and resources to students and enthusiasts of all levels. We believe that understanding physics is key to understanding the world around us.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h3 class="h4"><i class="fas fa-eye ser-Card-style"></i> Our Vision</h3>
+                    <p>We envision a world where everyone has the opportunity to explore and appreciate the wonders of physics. We strive to create a community of learners who are passionate about discovering the principles that govern our universe.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h3 class="h4"><i class="fas fa-lightbulb ser-Card-style"></i> Future Plans</h3>
+                    <p>We are constantly evolving and expanding our offerings to better serve our students. Here are some of our future plans:</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <strong>Advanced Courses:</strong> Introducing advanced physics courses for undergraduate and postgraduate students.
+                        </li>
+                        <li class="mb-2">
+                            <strong>Research Opportunities:</strong> Providing opportunities for students to participate in physics research projects.
+                        </li>
+                        <li class="mb-2">
+                            <strong>Workshops and Seminars:</strong> Organizing workshops and seminars with renowned physicists and educators.
+                        </li>
+                        <li class="mb-2">
+                            <strong>Online Learning Platform:</strong> Developing a comprehensive online learning platform with interactive lessons and assessments.
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 mb-4 bg-white p-5 border-radius-style">
+                    <h3 class="h4"><i class="fas fa-user-tie ser-Card-style"></i> Professor</h3>
+                    <p>Meet our experienced and dedicated physics professor who are here to guide you through your learning journey.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <strong>Dr. Ankulage Abhishek</strong> <i><b>(Phd. in Physics)</b></i> From IIT Bombay
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="contact-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-4 text-center">
+                    <h2 class="h1 ">Contact Us</h2>
+                    <p>We'd love to hear from you! Get in touch with us for any queries or information.</p>
+                </div>
+                <div class="col-md-6 mb-4 form-style">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn-style">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-6 mb-4 text-center">
+                    <h3 class="h4">Our Address</h3>
+                    <p><i class="fas fa-map-marker-alt ser-Card-style"></i> Ambajogai Road, Opp. Pahunchar Hotel, Physics Station, Latur (413512).</p>
+                    <h3 class="h4">Email</h3>
+                    <p><i class="fas fa-envelope ser-Card-style"></i> physicsstation@gmail.com</p>
+                    <h3 class="h4">Phone</h3>
+                    <p><i class="fas fa-phone ser-Card-style"></i> +91 7498289182</p>
+                    <h3 class="h4">Follow Us</h3>
+                    <p>
+                        <a href="https://www.facebook.com" target="_blank" class="text-dark mr-3">
+                            <i class="fab fa-facebook  ser-Card-style"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="text-dark mr-3">
+                            <i class="fab fa-instagram  ser-Card-style"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank" class="text-dark mr-3">
+                            <i class="fab fa-linkedin  ser-Card-style"></i>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-12 mb-4">
+                    <h3 class="h2"></h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3785.3982784369587!2d76.56850227596956!3d18.420217172230515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcf83788bf95f5b%3A0xa8b13ce5c3e5dd8e!2sPahunchar%20Pure%20Veg%20Restaurant!5e0!3m2!1sen!2sin!4v1738050229691!5m2!1sen!2sin" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq-section py-5 abt-bg-style">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-4 text-left">
+                    <h2 class="h1">Frequently Asked Questions</h2>
+                </div>
+                
+                <div class="col-12">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="card ">
+                            <div class="card-header " id="headingOne">
+                                <h5 class="mb-0 text-left">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                       <p class="btn-txt-style"> What courses do you offer? </p>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                                <div class="card-body text-left">
+                                    We offer specialized physics tuition for 11th and 12th standard students, as well as preparation courses for competitive exams like NEET, GATE, and JEE.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0 text-left"></h5>
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        How can I register for a course?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                                <div class="card-body text-left">
+                                    You can register for our courses online through our website. Simply click on the "Register Here" button and fill out the registration form.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0 text-left"></h5>
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        What is the fee structure?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                                <div class="card-body text-left">
+                                    Our fee structure varies depending on the course you choose. Please contact us for detailed information about the fees for each course.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h5 class="mb-0 text-left"></h5>
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Do you offer online classes?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                                <div class="card-body text-left">
+                                    Yes, we offer both online and offline classes to cater to the needs of our students. You can choose the mode of learning that suits you best.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h5 class="mb-0 text-left"></h5>
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        What study materials do you provide?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+                                <div class="card-body text-left">
+                                    We provide a variety of study materials including textbooks, practice papers, and online resources to help you excel in your studies.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingSix">
+                                <h5 class="mb-0 text-left"></h5>
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        Can I get a demo class before enrolling?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#faqAccordion">
+                                <div class="card-body text-left">
+                                    Yes, we offer demo classes for prospective students. Please contact us to schedule a demo class.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingSeven">
+                                <h5 class="mb-0 text-left"></h5>
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                        What is the duration of each course?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#faqAccordion">
+                                <div class="card-body text-left">
+                                    The duration of each course varies. Please refer to the course details on our website or contact us for more information.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingEight">
+                                <h5 class="mb-0 text-left"></h5>
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                        Do you provide any scholarships?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#faqAccordion">
+                                <div class="card-body text-left">
+                                    Yes, we offer scholarships to deserving students based on their academic performance and financial need. Please contact us for more details.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingNine">
+                                <h5 class="mb-0 text-left"></h5>
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                        How can I contact you for more information?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#faqAccordion">
+                                <div class="card-body text-left">
+                                    You can contact us through our website's contact form, email, or phone. Our contact details are available on the "Contact" page of our website.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="text-white text-center text-lg-start footergb-style">
+      <div class="container p-4">
+     
+        <div class="row mt-4">
+          
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Physics Station</h5>
+  
+            <p>
+            At Physics Station, we are dedicated to providing top-notch physics tuition to help students excel in their academic pursuits. Our experienced tutors use innovative teaching methods to make complex physics concepts easy to understand. Join us to enhance your knowledge and achieve your academic goals.
+            </p>
+  
+           
+          </div>
+          
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0 ">
+            <h5 class="text-uppercase mb-4 pb-1">Contact Details</h5>
+  
+            <ul class="fa-ul " style="margin-left: 1.65em;">
+              <li class="mb-3 tex">
+                Ambajogai Road, Opp. Pahunchar Hotel, Physics Station, Latur (413512).
+              </li>
+              <li class="mb-3">
+                physicsstation@gmail.com
+              </li>
+              <li class="mb-3">
+                +91 7498289182
+              </li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Opening hours</h5>
+  
+            <table class="table text-center text-white">
+              <tbody class="fw-normal">
+                <tr>
+                  <td>Mon - Sat:</td>
+                  <td>6am - 9pm</td>
+                </tr>
+                <tr>
+                  <td>Sunday:</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+        </div>
+       
+      </div>
+      
+      <div class="text-center p-3">
+        © 2025 Copyright:
+        <a class="text-white" href="#">PhysicsStation.com</a>
+        <div class="social-icons"></div>
+            <a href="https://www.facebook.com" target="_blank" class="text-white mr-3">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="text-white mr-3">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="text-white mr-3">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        
+      </div>
+     
+    </footer>
+  
+
+ 
+ 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+</body>
+</html>
